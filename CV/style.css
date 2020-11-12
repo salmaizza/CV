@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+header {
+    background: url('picture/bg1.jpg') no-repeat;
+    background-size: cover;
+    background-color: rgb(247, 180, 164);
+    background-blend-mode: multiply;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+
+header .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .wrapper h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 0 6px 0px salmon;
+    margin-bottom: 40px;
+}
+
+header .wrapper img {
+    width: 60%;
+    cursor: pointer;
+    transition: transform .5s ease-out;
+}
+
+header .wrapper img:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+}
+
+header .wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+header .wrapper ul li a {
+    margin-right: 20x;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    transition: border-bottom .5s ease-in-out;
+
+}
+
+header .wrapper ul li a:hover {
+    border-bottom: 5px solid salmon;
+}
+
+.tentang-saya {
+    background: rgb(219, 155, 148);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.tentang-saya .wrapper h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.tentang-saya .wrapper p {
+    text-shadow: 0 2px 1px  rgb(236, 205, 205);
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 35px;
+}
+
+.pendidikan {
+    background: rgb(247, 201, 196);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pendidikan .wrapper h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+    text-shadow: 0 4px 0px black;
+}
+
+.wrapper-pendidikan h4 {
+    color:rgb(182, 145, 141);
+    font-size: 20px;
+    text-shadow: 0 2px 0px black;
+}
+
+.skill {
+    background: rgb(211, 132, 123);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skill .wrapper {
+    width: 80%;
+}
+
+.skill .wrapper h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.skill .wrapper-skill {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skill .wrapper-skill h5 {
+    text-transform: uppercase;
+    text-shadow: 0 1px 0px black;
+    font-size: 18px;
+}
+
+.skill .wrapper-skill .background {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white;
+}
+
+.skill .wrapper-skill .background .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: rgb(148, 127, 125);
+    z-index: 2;
+}
+
+.indicator.copywriting {
+    width: 85%;
+}
+
+.indicator.research {
+    width: 70%;
+}
+
+.indicator.editing {
+    width: 65%;
+}
+
+.indicator.english {
+    width: 80%;
+}
+
+
+.hobi {
+    background: rgb(247, 201, 196);
+    color: rgb(156, 94, 94);
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobi .wrapper h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 4px 0px black;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.hobi .wrapper .wrapper-hobi {
+    display: grid;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.wrapper-hobi h5 {
+    color: aliceblue;
+    font-size: 1rem;
+    text-shadow: 0 2px 0px black;
+}
+
+.kontak {
+    background: rgb(248, 227, 225);
+    color: rgb(206, 149, 149);
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontak .wrapper h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+    text-shadow: 0 4px 0px black;
+}
+
+.wrapper-kontak h6 {
+    color:rgb(182, 145, 141);
+    font-size: 20px;
+    text-shadow: 0 2px 0px black;
+}
